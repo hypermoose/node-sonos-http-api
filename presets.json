@@ -87,13 +87,14 @@
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 3
+        "volume": 4
       }
     ],
     "state": "playing",
     "favorite": "Spa Radio",
     "playMode": "NORMAL",
-    "pauseOthers": true
+    "pauseOthers": true,
+    "sleep": "02:00:00" 
   },
   "calm": {
     "players": [
@@ -105,31 +106,34 @@
     "state": "playing",
     "favorite": "Calm Meditation Radio",
     "playMode": "NORMAL",
-    "pauseOthers": true
+    "pauseOthers": true,
+    "sleep": "02:00:00" 
   },
   "lullabies": {
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 3
+        "volume": 4
       }
     ],
     "state": "playing",
     "favorite": "Disney Lullabies",
     "playMode": "NORMAL",
-    "pauseOthers": true
+    "pauseOthers": true,
+    "sleep": "02:00:00" 
   },
   "chinese": {
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 3
+        "volume": 4
       }
     ],
     "state": "playing",
     "favorite": "Chinese Traditional Music",
     "playMode": "SHUFFLE_NOREPEAT",
-    "pauseOthers": true
+    "pauseOthers": true,
+    "sleep": "02:00:00" 
   },
   "test": {
     "players": [
@@ -142,6 +146,6 @@
     "favorite": "C89.5",
     "playMode": "NORMAL",
     "pauseOthers": false,
-    "sleepTimer": 7200
+    "sleep": "01:00:00" 
   }
 }
