@@ -1,0 +1,147 @@
+﻿{
+  "sunday": {
+    "players": [
+      {
+        "roomName": "Living Room",
+        "volume": 19
+      },
+      {
+        "roomName": "Kitchen",
+        "volume": 23
+      },
+      {
+        "roomName": "Office",
+        "volume": 15
+      },
+      {
+        "roomName": "Bathroom",
+        "volume": 24
+      },
+      {
+        "roomName": "Portable",
+        "volume": 0
+      }
+    ],
+    "state": "playing",
+    "favorite": "John Williams & Boston Pops Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+  "happy": {
+    "players": [
+      {
+        "roomName": "Living Room",
+        "volume": 19
+      },
+      {
+        "roomName": "Kitchen",
+        "volume": 23
+      },
+      {
+        "roomName": "Office",
+        "volume": 15
+      },
+      {
+        "roomName": "Bathroom",
+        "volume": 24
+      },
+      {
+        "roomName": "Portable",
+        "volume": 0
+      }
+    ],
+    "state": "playing",
+    "favorite": "Happy Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+  "morning": {
+    "players": [
+      {
+        "roomName": "Living Room",
+        "volume": 15
+      },
+      {
+        "roomName": "Kitchen",
+        "volume": 15
+      },
+      {
+        "roomName": "Office",
+        "volume": 10
+      },
+      {
+        "roomName": "Bathroom",
+        "volume": 10
+      },
+      {
+        "roomName": "Portable",
+        "volume": 0
+      }
+    ],
+    "state": "playing",
+    "favorite": "C89.5",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+  "spa": {
+    "players": [
+      {
+        "roomName": "Bathroom",
+        "volume": 3
+      }
+    ],
+    "state": "playing",
+    "favorite": "Spa Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+  "calm": {
+    "players": [
+      {
+        "roomName": "Bathroom",
+        "volume": 3
+      }
+    ],
+    "state": "playing",
+    "favorite": "Calm Meditation Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+  "lullabies": {
+    "players": [
+      {
+        "roomName": "Bathroom",
+        "volume": 3
+      }
+    ],
+    "state": "playing",
+    "favorite": "Disney Lullabies",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+  "chinese": {
+    "players": [
+      {
+        "roomName": "Bathroom",
+        "volume": 3
+      }
+    ],
+    "state": "playing",
+    "favorite": "Chinese Traditional Music",
+    "playMode": "SHUFFLE_NOREPEAT",
+    "pauseOthers": true
+  },
+  "test": {
+    "players": [
+      {
+        "roomName": "Office",
+        "volume": 15
+      }
+    ],
+    "state": "playing",
+    "favorite": "C89.5",
+    "playMode": "NORMAL",
+    "pauseOthers": false,
+    "sleepTimer": 7200
+  }
+}
