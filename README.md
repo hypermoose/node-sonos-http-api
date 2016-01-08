@@ -14,7 +14,7 @@ USAGE
 
 Start by fixing your dependencies. Invoke the following command:
 
-`npm install`
+`npm install --production`
 
 This will download the necessary dependencies if possible (you will need git for this)
 
@@ -79,6 +79,7 @@ The actions supported as of today:
 * pauseall (with optional timeout in minutes)
 * resumeall (will resume the ones that was pause on the pauseall call. Useful for doorbell, phone calls, etc. Optional timeout)
 * say
+* queue
 * clearqueue
 
 
@@ -117,6 +118,46 @@ Example of a state json:
 	    "crossfade":false
 	  }
 	}
+
+Queue
+-----
+Obtain the current queue list from a specified player. The request will accept:
+ - No parameters
+ 
+	`http://localhost:5005/living room/queue`
+ - Just a start index for the queue
+ 
+	`http://localhost:5005/living room/queue/[start-index]`
+ - A start index and a count of items to return
+ 
+	`http://localhost:5005/living room/queue/[start-index]/[count]`
+
+
+
+Example queue response: 
+```
+{
+  "startIndex": "0",
+  "numberReturned": 2,
+  "totalMatches": 33,
+  "items": [
+    {
+      "uri": "x-sonos-spotify:spotify%3atrack%3a0AvV49z4EPz5ocYN7eKGAK?sid=9&flags=8224&sn=3",
+      "albumArtURI": "/getaa?s=1&u=x-sonos-spotify%3aspotify%253atrack%253a0AvV49z4EPz5ocYN7eKGAK%3fsid%3d9%26flags%3d8224%26sn%3d3",
+      "title": "No Diggity",
+      "artist": "Blackstreet",
+      "album": "Another Level"
+    },
+    {
+      "uri": "x-sonos-spotify:spotify%3atrack%3a5OQGeJ1ceykovrykZsGhqL?sid=9&flags=8224&sn=3",
+      "albumArtURI": "/getaa?s=1&u=x-sonos-spotify%3aspotify%253atrack%253a5OQGeJ1ceykovrykZsGhqL%3fsid%3d9%26flags%3d8224%26sn%3d3",
+      "title": "Breathless",
+      "artist": "The Corrs",
+      "album": "In Blue"
+    }
+  ]
+}
+```
 
 
 Preset
@@ -198,4 +239,50 @@ Example:
 	/sayall/Hello, dinner is ready
 
 Sayall will group all players, set 20% volume and then try and restore everything as the way it where. Please try it out, it will probably contain glitches but please report detailed descriptions on what the problem is (starting state, error that occurs, and the final state of your system).
+
+Docker
+-------
+
+A docker file is included, make sure that if you use this that you start up your container with "--net=host" example:
+
+```
+docker run --net=host --restart=always -d <your container/image name>
+```
+
+The restart always is to keep it running after a reboot and to keep it alive it if crashes.
+More information for docker https://docs.docker.com
+
+Webhook
+-------
+
+NOTE! This is experimental and might change in the future! Please leave your feedback as github issues if you feel like it doesn't suit your need, since I don't know what kind of restrictions you will be facing.
+
+Since 0.17.x there is now support for a web hook. If you add a setting in settings.json like this:
+
+```
+{
+  "webhook": "http://localhost:5006/"
+}
+```
+
+Every state change and topology change will be posted (method POST) to that URL, as JSON. The following data structure will be sent:
+
+```
+{
+  "type": "transport-state",
+  "data": { (snapshot of player) }
+}
+```
+
+or
+
+```
+{
+  "type": "topology-change",
+  "data": { (snapshot of zones) }
+}
+```
+
+"data" property will be equal to the same data as you would get from /RoomName/state or /zones. There is an example endpoint in the root if this project called test_endpoint.js which you may fire up to get an understanding of what is posted, just invoke it with "node test_endpoint.js" in a terminal, and then start the http-api in another terminal.
+
 
