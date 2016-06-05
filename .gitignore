@@ -8,3 +8,7 @@ static/tts
 obj/
 *.njsproj
 *.sln
+*.pem
+*.crt
+*.pfx
+*.key
