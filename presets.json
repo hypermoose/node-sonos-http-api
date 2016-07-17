@@ -18,7 +18,11 @@
         "volume": 24
       },
       {
-        "roomName": "Portable",
+        "roomName": "Back Porch",
+        "volume": 0
+      },
+	  {
+        "roomName": "Side yard",
         "volume": 0
       }
     ],
@@ -46,12 +50,48 @@
         "volume": 24
       },
       {
-        "roomName": "Portable",
+        "roomName": "Back Porch",
+        "volume": 0
+      },
+	  {
+        "roomName": "Side yard",
         "volume": 0
       }
     ],
     "state": "playing",
     "favorite": "Happy Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+  },
+   "outside": {
+    "players": [
+      {
+        "roomName": "Living Room",
+        "volume": 19
+      },
+      {
+        "roomName": "Kitchen",
+        "volume": 23
+      },
+      {
+        "roomName": "Office",
+        "volume": 15
+      },
+      {
+        "roomName": "Bathroom",
+        "volume": 24
+      },
+      {
+        "roomName": "Back Porch",
+        "volume": 0
+      },
+	  {
+        "roomName": "Side yard",
+        "volume": 20
+      }
+    ],
+    "state": "playing",
+    "favorite": "Andy Grammer Radio",
     "playMode": "NORMAL",
     "pauseOthers": true
   },
@@ -74,7 +114,11 @@
         "volume": 10
       },
       {
-        "roomName": "Portable",
+        "roomName": "Back Porch",
+        "volume": 0
+      },
+	  {
+        "roomName": "Side yard",
         "volume": 0
       }
     ],
