@@ -261,7 +261,8 @@ Example:
 	    "cert" : "/path/to/cert.pem"
 
 	    //... for pfx (alternative configuration)
-	    "pfx": "/path/to/pfx.pfx"
+	    "pfx": "/path/to/pfx.pfx”,
+         “passphrase”: “passphrase”
 	  },
 	  "auth": {
 	    "username": "admin",
@@ -364,10 +365,14 @@ The following endpoints are available:
 # Apple Music
 /RoomName/applemusic/{now,next,queue}/song:{songID}
 /RoomName/applemusic/{now,next,queue}/album:{albumID}
+/RoomName/applemusic/queue/name:{artist name, song title, artist name & song title}
+/RoomName/applemusic/radio/radio:{artist name, song title, artist name & song title}
 ```
 
 You can find Apple Music song and album IDs via the [iTunes Search
 API](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/).
+
+You can specify an artist name, song title, or combination of the two, iTunes search will be searched automatically, and the results will be played. With the radio action you can specify the same and an Apple Music Radio station for the artist or track will be played.
 
 It only handles a single spotify account currently. It will probably use the first account added on your system. Experiment with it and leave feedback!
 
