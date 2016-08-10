@@ -230,5 +230,38 @@
     "playMode": "NORMAL",
     "pauseOthers": false,
     "sleep": "01:00:00"
+  },
+  "security alarm": {
+    "players": [
+      {
+        "roomName": "Living Room",
+        "volume": 19
+      },
+      {
+        "roomName": "Kitchen",
+        "volume": 23
+      },
+      {
+        "roomName": "Office",
+        "volume": 15
+      },
+      {
+        "roomName": "Bathroom",
+        "volume": 24
+      },
+      {
+        "roomName": "Back Porch",
+        "volume": 0
+      },
+	  {
+        "roomName": "Side yard",
+        "volume": 30
+      }
+    ],
+    "state": "playing",
+    "favorite": "Security Alarm",
+    "playMode": "REPEAT_ALL",
+    "pauseOthers": true,
+    "sleep": "01:00:00"
   }
 }
