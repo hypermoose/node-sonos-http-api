@@ -131,7 +131,7 @@
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 4
+        "volume": 2
       }
     ],
     "state": "playing",
@@ -144,7 +144,7 @@
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 3
+        "volume": 2
       }
     ],
     "state": "playing",
@@ -235,27 +235,27 @@
     "players": [
       {
         "roomName": "Living Room",
-        "volume": 19
+        "volume": 30
       },
       {
         "roomName": "Kitchen",
-        "volume": 23
+        "volume": 30
       },
       {
         "roomName": "Office",
-        "volume": 15
+        "volume": 30
       },
       {
         "roomName": "Bathroom",
-        "volume": 24
+        "volume": 30
       },
       {
         "roomName": "Back Porch",
-        "volume": 0
+        "volume": 30
       },
 	  {
         "roomName": "Side yard",
-        "volume": 30
+        "volume": 60
       }
     ],
     "state": "playing",
