@@ -138,33 +138,33 @@
     "favorite": "Spa Radio",
     "playMode": "NORMAL",
     "pauseOthers": true,
-    "sleep": "02:00:00" 
+    "sleep": 7200
   },
   "calm": {
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 2
+        "volume": 3
       }
     ],
     "state": "playing",
     "favorite": "Calm Meditation Radio",
     "playMode": "NORMAL",
     "pauseOthers": true,
-    "sleep": "02:00:00" 
+    "sleep": 7200
   },
   "lullabies": {
     "players": [
       {
         "roomName": "Bathroom",
-        "volume": 4
+        "volume": 3
       }
     ],
     "state": "playing",
     "favorite": "Disney Lullabies",
     "playMode": "NORMAL",
     "pauseOthers": true,
-    "sleep": "02:00:00" 
+    "sleep": 7200 
   },
   "chinese": {
     "players": [
@@ -177,7 +177,7 @@
     "favorite": "Chinese Traditional Music",
     "playMode": "SHUFFLE_NOREPEAT",
     "pauseOthers": true,
-    "sleep": "02:00:00" 
+    "sleep": 7200
   },
   "holly": {
     "players": [
@@ -190,7 +190,7 @@
     "favorite": "781 - Holly",
     "playMode": "SHUFFLE_NOREPEAT",
     "pauseOthers": true,
-    "sleep": "02:00:00"
+    "sleep": 7200
   },
   "nutcracker": {
     "players": [
@@ -203,7 +203,7 @@
     "favorite": "The Nutcracker Radio",
     "playMode": "SHUFFLE_NOREPEAT",
     "pauseOthers": true,
-    "sleep": "02:00:00"
+    "sleep": 7200
   },
   "mannheim": {
     "players": [
@@ -216,52 +216,52 @@
     "favorite": "Mannheim Steamroller",
     "playMode": "SHUFFLE_NOREPEAT",
     "pauseOthers": true,
-    "sleep": "02:00:00"
+    "sleep": 7200
   },
   "test": {
     "players": [
       {
         "roomName": "Office",
-        "volume": 15
+        "volume": 5
       }
     ],
     "state": "playing",
-    "favorite": "C89.5",
+    "favorite": "Dance Radio - 89.5",
     "playMode": "NORMAL",
     "pauseOthers": false,
-    "sleep": "01:00:00"
+    "sleep": 3600
   },
   "security alarm": {
     "players": [
       {
         "roomName": "Living Room",
-        "volume": 30
+        "volume": 50
       },
       {
         "roomName": "Kitchen",
-        "volume": 30
+        "volume": 50
       },
       {
         "roomName": "Office",
-        "volume": 30
+        "volume": 50
       },
       {
         "roomName": "Bathroom",
-        "volume": 30
+        "volume": 50
       },
       {
         "roomName": "Back Porch",
-        "volume": 30
+        "volume": 50
       },
 	  {
         "roomName": "Side yard",
-        "volume": 60
+        "volume": 70
       }
     ],
     "state": "playing",
     "favorite": "Security Alarm",
     "playMode": "REPEAT_ALL",
     "pauseOthers": true,
-    "sleep": "01:00:00"
+    "sleep": 3600
   }
 }
