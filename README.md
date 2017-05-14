@@ -95,6 +95,11 @@ The actions supported as of today:
 * linein (only analog linein, not PLAYBAR yet)
 * clip (announce custom mp3 clip)
 * clipall
+* join / leave  (Grouping actions)
+* sub (on/off/gain/crossover/polarity) See SUB section for more info
+* nightmode (on/off, PLAYBAR only)
+* speechenhancement (on/off, PLAYBAR only)
+
 
 State
 -----
@@ -246,7 +251,7 @@ In the example, there is one preset called `all`, which you can apply by invokin
 presets folder
 --------------
 
-You can create a preset files in the presets folder with pre made presets, called presets.json. It will be loaded upon start, any changes made to files in this folder (addition, removal, modification) will trigger a reload of your presets.
+You can create a preset files in the presets folder with pre made presets. It will be loaded upon start, any changes made to files in this folder (addition, removal, modification) will trigger a reload of your presets. The name of the file (xxxxxx.json) will become the name of the preset. It will be parsed as JSON5, to be more forgiving of typos. See http://json5.org/ for more info.
 
 Example content:
 
@@ -289,7 +294,7 @@ There is an example.json bundled with this repo. The name of the file will becom
 settings.json
 -------------
 
-If you want to change default settings, you can create a settings.json file and put in the root folder.
+If you want to change default settings, you can create a settings.json file and put in the root folder. This will be parsed as JSON5, to be more forgiving. See http://json5.org/ for more info.
 
 Available options are:
 
@@ -644,7 +649,7 @@ Optional parameter is line-in from another player. Examples:
 `/Office/linein`
 Selects line-in on zone Office belongs to, with source Office.
 
-`Office/linein/TV Room`
+`/Office/linein/TV%20Room`
 Selects line-in for zone Office belongs to, with source TV Room.
 
 If you want to to isolate a player and then select line-in, use the `/Office/leave` first.
@@ -659,12 +664,44 @@ Like "Say" but instead of a phrase, reference a custom track from the `static/cl
 
 Examples:
 
-    clipall/sample_clip.mp3
-    clipall/sample_clip.mp3/80
+    /clipall/sample_clip.mp3
+    /clipall/sample_clip.mp3/80
     /Office/clip/sample_clip.mp3
     /Office/clip/sample_clip.mp3/30
 
 *Pro-tip: announce your arrival with an epic theme song!*
+
+Grouping
+--------
+
+You have basic grouping capabilities. `join` will join the selected player to the specified group (specify group by addressing any of the players in that group):
+
+`/Kitchen/join/Office`
+This will join the Kitchen player to the group that Office currently belong to.
+
+`/Kitchen/leave`
+Kitchen will leave any group it was part of and become a standalone player.
+
+You don't have to ungroup a player in order to join it to another group, just join it to the new group and it will jump accordingly.
+
+SUB
+---
+
+SUB actions include the following:
+`/TV%20Room/sub/off`
+Turn off sub
+
+`/TV%20Room/sub/on`
+Turn on sub
+
+`/TV%20Room/sub/gain/3`
+Adjust gain, -15 to 15. You can make bigger adjustments, but I'm limiting it for now because it might damage the SUB.
+
+`/TV%20Room/sub/crossover/90`
+adjust crossover frequency in hz. Official values are 50 through 110 in increments of 10. Use other values at your own risk! My SUB gave a loud bang and shut down when setting this to high, and I thought I broke it. However, a restart woke it up again.
+
+`/TV%20Room/sub/polarity/1`
+Switch "placement adjustment" or more commonly known as phase. 0 = 0°, 1 = 180°
 
 Spotify and Apple Music (Experimental)
 ----------------------
@@ -719,6 +756,17 @@ Your Pandora credentials need to be added to the settings.json file
             "password": "your-pandora-password"
           }
   ```
+ 
+
+Tunein
+----------------------
+Given a station id this will play the streaming broadcast via the tunein service. You can find tunein station ids via services like [radiotime](http://opml.radiotime.com/)
+
+The following endpoint is available:
+
+```
+/RoomName/tunein/play/{station id}
+```
  
 
 Music Search and Play
@@ -830,3 +878,7 @@ or
 "data" property will be equal to the same data as you would get from /RoomName/state or /zones. There is an example endpoint in the root if this project called test_endpoint.js which you may fire up to get an understanding of what is posted, just invoke it with "node test_endpoint.js" in a terminal, and then start the http-api in another terminal.
 
 
+DOCKER
+-----
+
+Docker usage is maintained by [Chris Nesbitt-Smith](https://github.com/chrisns) at [chrisns/docker-node-sonos-http-api](https://github.com/chrisns/docker-node-sonos-http-api)
