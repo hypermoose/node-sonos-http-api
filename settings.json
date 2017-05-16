@@ -2,5 +2,13 @@
   "microsoft": {
     "key": "45a37b6edf334946a3f2a64e3a7ece0e",
     "name": "ZiraRUS"
+  },
+  "auth": {
+    "username": "admin",
+    "password": "gnuver11"
+  },
+  "pandora": {
+    "username": "jojo@jojo-graphics.com",
+    "password": ""
   }
 }
