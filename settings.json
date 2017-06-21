@@ -10,5 +10,9 @@
   "pandora": {
     "username": "jojo@jojo-graphics.com",
     "password": "tobyTy1er"
-  }
+  },
+  "spotify": {
+	    "clientId": "f6991d4597dc46059767d97c2a56082c",
+	    "clientSecret": "23b4cfe6a765411088d8bdb013707e14"
+	  }
 }
