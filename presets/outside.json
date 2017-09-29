@@ -27,6 +27,10 @@
     ],
     "state": "playing",
     "favorite": "Happy Radio",
-    "playMode": "NORMAL",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": true
 }

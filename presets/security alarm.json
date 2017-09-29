@@ -27,7 +27,11 @@
     ],
     "state": "playing",
     "favorite": "Security Alarm",
-    "playMode": "REPEAT_ALL",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": true,
     "sleep": 3600
 }

@@ -27,6 +27,10 @@
     ],
     "state": "playing",
     "favorite": "C89.5",
-    "playMode": "NORMAL",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": true
 }

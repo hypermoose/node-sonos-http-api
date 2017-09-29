@@ -27,6 +27,10 @@
     ],
     "state": "playing",
     "favorite": "John Williams & Boston Pops Radio",
-    "playMode": "NORMAL",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": true
 }

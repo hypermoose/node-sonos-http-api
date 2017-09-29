@@ -7,7 +7,11 @@
     ],
     "state": "playing",
     "favorite": "Dance Radio - 89.5",
-    "playMode": "NORMAL",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": false,
     "sleep": 3600
 }

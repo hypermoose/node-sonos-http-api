@@ -7,7 +7,11 @@
     ],
     "state": "playing",
     "favorite": "Mannheim Steamroller",
-    "playMode": "SHUFFLE_NOREPEAT",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": true,
     "sleep": 7200
 }

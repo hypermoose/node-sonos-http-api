@@ -7,7 +7,11 @@
     ],
     "state": "playing",
     "favorite": "Spa Radio",
-    "playMode": "NORMAL",
+    "playMode": {
+        "shuffle": true,
+        "repeat": "all",
+        "crossfade": true
+    },
     "pauseOthers": true,
     "sleep": 7200
 }
