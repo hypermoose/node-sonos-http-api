@@ -1,0 +1,32 @@
+{
+    "players": [
+        {
+            "roomName": "Living Room",
+            "volume": 15
+        },
+        {
+            "roomName": "Kitchen",
+            "volume": 15
+        },
+        {
+            "roomName": "Office",
+            "volume": 10
+        },
+        {
+            "roomName": "Bathroom",
+            "volume": 10
+        },
+        {
+            "roomName": "Back Porch",
+            "volume": 75
+        },
+        {
+            "roomName": "Side yard",
+            "volume": 0
+        }
+    ],
+    "state": "playing",
+    "favorite": "C89.5",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+}

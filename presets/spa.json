@@ -1,0 +1,13 @@
+{
+    "players": [
+        {
+            "roomName": "Bathroom",
+            "volume": 3
+        }
+    ],
+    "state": "playing",
+    "favorite": "Spa Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true,
+    "sleep": 7200
+}

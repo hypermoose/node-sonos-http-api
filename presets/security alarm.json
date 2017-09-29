@@ -1,0 +1,33 @@
+{
+    "players": [
+        {
+            "roomName": "Living Room",
+            "volume": 50
+        },
+        {
+            "roomName": "Kitchen",
+            "volume": 50
+        },
+        {
+            "roomName": "Office",
+            "volume": 50
+        },
+        {
+            "roomName": "Bathroom",
+            "volume": 50
+        },
+        {
+            "roomName": "Back Porch",
+            "volume": 75
+        },
+        {
+            "roomName": "Side yard",
+            "volume": 70
+        }
+    ],
+    "state": "playing",
+    "favorite": "Security Alarm",
+    "playMode": "REPEAT_ALL",
+    "pauseOthers": true,
+    "sleep": 3600
+}

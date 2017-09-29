@@ -1,0 +1,13 @@
+{
+    "players": [
+        {
+            "roomName": "Bathroom",
+            "volume": 4
+        }
+    ],
+    "state": "playing",
+    "favorite": "The Nutcracker Radio",
+    "playMode": "SHUFFLE_NOREPEAT",
+    "pauseOthers": true,
+    "sleep": 7200
+}

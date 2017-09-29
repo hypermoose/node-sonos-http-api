@@ -1,0 +1,13 @@
+{
+    "players": [
+        {
+            "roomName": "Bathroom",
+            "volume": 3
+        }
+    ],
+    "state": "playing",
+    "favorite": "Disney Lullabies",
+    "playMode": "NORMAL",
+    "pauseOthers": true,
+    "sleep": 7200
+}

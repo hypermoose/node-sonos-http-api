@@ -1,0 +1,32 @@
+{
+    "players": [
+        {
+            "roomName": "Living Room",
+            "volume": 19
+        },
+        {
+            "roomName": "Kitchen",
+            "volume": 23
+        },
+        {
+            "roomName": "Office",
+            "volume": 15
+        },
+        {
+            "roomName": "Bathroom",
+            "volume": 24
+        },
+        {
+            "roomName": "Back Porch",
+            "volume": 75 
+        },
+        {
+            "roomName": "Side yard",
+            "volume": 0
+        }
+    ],
+    "state": "playing",
+    "favorite": "John Williams & Boston Pops Radio",
+    "playMode": "NORMAL",
+    "pauseOthers": true
+}

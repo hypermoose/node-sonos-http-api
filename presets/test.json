@@ -1,0 +1,13 @@
+{
+    "players": [
+        {
+            "roomName": "Office",
+            "volume": 5
+        }
+    ],
+    "state": "playing",
+    "favorite": "Dance Radio - 89.5",
+    "playMode": "NORMAL",
+    "pauseOthers": false,
+    "sleep": 3600
+}
