@@ -2,7 +2,7 @@
     "players": [
         {
             "roomName": "Bathroom",
-            "volume": 4
+            "volume": 2
         }
     ],
     "state": "playing",

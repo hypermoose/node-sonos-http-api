@@ -2,11 +2,11 @@
     "players": [
         {
             "roomName": "Living Room",
-            "volume": 15
+            "volume": 12
         },
         {
             "roomName": "Kitchen",
-            "volume": 15
+            "volume": 12
         },
         {
             "roomName": "Office",
